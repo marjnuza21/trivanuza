@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1
+ {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #202020;
+    font-size: 12em;
+    margin-top: 3.5em;
+    top: 50%;
+    left: 17%;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 30px white;
+
+
+}
+#nuza {
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    height: 2500px;
+    width: 800px;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 20px white);
+    animation: fill 0.5s ease forwards 4.3s;
+}
+
+
+#nuza path:nth-child(1){
+ stroke-dasharray: 2401.3134765625;
+ stroke-dashoffset: 2397.3134765625;
+ animation: line-anim 3.5s ease forwards;
+
+}
+#nuza path:nth-child(2){
+    stroke-dasharray: 2017.9207763671875;
+    stroke-dashoffset: 2017.9207763671875;
+    animation: line-anim 3.5s ease forwards 0.4s;
+}
+#nuza path:nth-child(3){
+    stroke-dasharray: 1912.2421875;
+    stroke-dashoffset: 1912.2421875;
+    animation: line-anim 3.5s ease forwards 0.8s;
+    
+}
+#nuza path:nth-child(4){
+    stroke-dasharray: 1974.150634765625;
+    stroke-dashoffset: 1974.150634765625;
+    animation: line-anim 3.5s ease forwards 0.12s;
+}
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 5;
+    }
+}
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
+
+p a {
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #202020;
+    font-size: 2em;
+    transition: 0.2s;  
+    position: absolute;
+    left: 20%;
+    margin-top: 15em;
+    animation: ease forwards 6s;
+    text-shadow: 0 0 10px white,
+                 0 0 15px white;
+
+
+}
+@media screen and (min-width: 1024px){
+    h1
+ {
+    position: relative;
+    color: #202020;
+    font-size: 45em;
+    top:20%;
+    left: 35%;
+    margin-top: 1em;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 40px white,
+                 0 0 80px white,
+                 0 0 120px white;
+                }
+
+    #nuza {
+        position: absolute;
+        top: 50%;
+        left: 53%;
+        height: 7500px;
+        width: 4000px;
+        transform: translate(-50%, -50%);
+        filter: drop-shadow(0 0 20px white);
+        animation: fill 0.5s ease forwards 4.3s;
+    }
+
+    p a {
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #202020;
+    font-size: 10em;
+    transition: 0.2s;    
+    position: absolute;
+    left: 33%;
+    margin-top: 11.5em;
+    transition: 0.2s;    
+}
+p :hover  {
+    color: white;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 40px white;
+}
+
+} 
