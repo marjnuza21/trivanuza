@@ -4,22 +4,22 @@
     overflow: hidden;
 }
 
-h1
- {
-    position: relative;
-    font-family: 'Courier New', Courier, monospace;
+h1 a {
+    font-family:'Courier New', Courier, monospace;
     text-decoration: none;
+    position: absolute;
+    display: flex;
     color: #202020;
-    font-size: 12em;
-    margin-top: 2.5em;
-    top: 30%;
-    left: 17%;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 30px white;
-
-
+    font-size: 8em;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1em;
+    text-shadow: 0 0 10px white;
+    filter: drop-shadow(0 0 20px white);
+    animation: alternate;
 }
+
 #nuza {
     position: absolute;
     top: 50%;
@@ -82,18 +82,7 @@ p a {
 
 }
 @media screen and (min-width: 1024px){
-    h1
- {
-    position: relative;
-    color: #202020;
-    font-size: 14em;
-    top:20%;
-    left: 35%;
-    margin-top: .5em;
-    text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 40px white;
-                }
+  
 
     #nuza {
         position: absolute;
@@ -104,21 +93,24 @@ p a {
         animation: fill 0.5s ease forwards 4.3s;
     }
 
-    p a {
-    font-family:'Courier New', Courier, monospace;
-    text-decoration: none;
-    color: #202020;
-    font-size: 5em;
-    transition: 0.2s;    
-    position: absolute;
-    margin-top: 10em;
+    h1 a {
+        font-family:'Courier New', Courier, monospace;
+        text-decoration: none;
+        position: absolute;
+        display: flex;
+        color: #202020;
+        font-size: 8em;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: .5em;
+        text-shadow: 0 0 10px white;
     transition: 0.2s;    
 }
-p :hover  {
+h1 :hover  {
     color: white;
     text-shadow: 0 0 10px white,
-                 0 0 20px white,
-                 0 0 40px white;
+                 0 0 20px white;
 }
 
 } 
