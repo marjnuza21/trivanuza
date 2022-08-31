@@ -64,23 +64,7 @@ h1 a {
     to {
         fill: white;
     }
-}
 
-p a {
-    font-family:'Courier New', Courier, monospace;
-    text-decoration: none;
-    color: #202020;
-    font-size: 2em;
-    transition: 0.2s;  
-    position: absolute;
-    left: 10%;
-    margin-top: 16em;
-    animation: ease forwards 6s;
-    text-shadow: 0 0 10px white,
-                 0 0 15px white;
-
-
-}
 @media screen and (min-width: 1024px){
   
 
